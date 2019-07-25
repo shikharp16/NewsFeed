@@ -82,6 +82,10 @@ class News extends Component {
     catHandler = (cat) =>{
         this.displayCat(cat)
     }
+    homeHandler = () => {
+        console.log("Home handler in news")
+        this.display()
+    }
     componentDidMount() {
         console.log("did mount")
         this.display();
@@ -92,7 +96,7 @@ class News extends Component {
             description={elem.description} img={elem.urlToImage} title={elem.title} url={elem.url}></Post>)
         
         return <div>
-            <MyNav submitHandler = {this.searchValueHandler} catHandler = {this.catHandler}></MyNav>
+            <MyNav submitHandler = {this.searchValueHandler} catHandler = {this.catHandler} homeHandler= {this.homeHandler}></MyNav>
             {post}
         </div>;
     }

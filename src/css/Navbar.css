@@ -1,0 +1,10 @@
+.form-control{
+    margin: 5x;
+    border-radius : 5px;
+}
+.btn {
+    margin: 5px;
+    border-radius : 5px;
+    background-color: #b1bdc7;
+    color: black
+}
